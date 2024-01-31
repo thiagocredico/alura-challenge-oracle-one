@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Challenge Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
-  <h1 class="titulo">código secreto</h1>
+    <header>
+        <h1>a</h1>
+    </header>
+    <main>
+        <section>
+            <textarea name="input_msg" id="input_msg"  rows="20" placeholder="Digite seu texto" maxlength="664"  required></textarea>
+            <div>
+                <small>Apenas letras minúsculas e sem acento.</small>
+                <div>
+                    <button class="crypt">Criptografar</button>
+                    <button class="decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div id="whiteboard">
+                <img src="lookingfor.jpg" alt="looking for">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div>
+              <button class="copy notvisible">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+      <section class="name">
+        <a href="https://thiagocredico.github.io/">
+          Feito com ❤️ Thiago Credico 2024
+        </a>
+      </section>
+      <section class="socialMedia">
+        <a href="https://github.com/thiagocredico">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/thiago-credico/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="mailto: thiagocredico@gmail.com">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-  <main class="main">
-    <section class="form box">
-      <form action="">
-        <label for="input-texto">Apenas letras minúsculas, sem acento</label>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-        <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
-        <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
-      </form>
-    </section>
-  
-    <section class="msg box">
-      <h2 id="">Mensagem criptografada:</h2>
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
-    </section>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
